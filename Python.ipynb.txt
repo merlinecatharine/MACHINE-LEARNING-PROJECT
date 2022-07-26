@@ -1,0 +1,219 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 339
+        },
+        "id": "Ql1zZifi5kNw",
+        "outputId": "7d8610ae-30c0-4159-a560-e5b96e48037a"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "<class 'type'>\n"
+          ]
+        },
+        {
+          "ename": "NameError",
+          "evalue": "ignored",
+          "output_type": "error",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-1-c8701b1a9fc9>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;31m#printing the list1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m \u001b[0mPrint\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mlist1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0;31m#List slicing\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'Print' is not defined"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "\n",
+        "list1 = [1, \"hi\", \"Python\", 2] #Checking type of given list \n",
+        "print(type(list))\n",
+        "\n",
+        "#printing the list1\n",
+        "Print (list1)\n",
+        "\n",
+        "#List slicing\n",
+        "Print (list[3:1])\n",
+        "\n",
+        "#List slicing \n",
+        "print (list1[0:2])\n",
+        "\n",
+        "#List Concatenation using + operator\n",
+        "print (list1+ list1)\n",
+        "\n",
+        "#List repetition using operator \n",
+        "print (list13)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 428
+        },
+        "id": "gTT96zNe7Ufl",
+        "outputId": "4fb2bf43-1f0e-4ccb-926b-4a4d3f4ed18d"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "<class 'tuple'>\n",
+            "('hi', 'Python', 2)\n",
+            "('Python', 2)\n",
+            "('hi',)\n",
+            "('hi', 'Python', 2, 'hi', 'Python', 2)\n",
+            "('hi', 'Python', 2, 'hi', 'Python', 2, 'hi', 'Python', 2)\n"
+          ]
+        },
+        {
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "output_type": "error",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-4-c1861a9b08fb>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     12\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     13\u001b[0m \u001b[0;31m#Adding value to tup. It will throw an error.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 14\u001b[0;31m \u001b[0mtup\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m\"hi\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+          ]
+        }
+      ],
+      "source": [
+        "tup = (\"hi\", \"Python\", 2) \n",
+        "#Checking type of tup\n",
+        "print (type(tup)) \n",
+        "#Printing the tuple \n",
+        "print (tup)\n",
+        "#Tuple slicing \n",
+        "print (tup[1:]) \n",
+        "print (tup[0:1]) #Tuple concatenation using + operator \n",
+        "print (tup + tup)\n",
+        "#Tuple repetition using * operator\n",
+        "print (tup *3)\n",
+        "\n",
+        "#Adding value to tup. It will throw an error. \n",
+        "tup[2] = \"hi\""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "beUDNMU39dW3",
+        "outputId": "900de140-ca83-4322-ddb6-282f1b308437"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "[(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd'), (5, 'e')]\n"
+          ]
+        }
+      ],
+      "source": [
+        "r=[1,2,3,4,5,6]\n",
+        "n=['a','b','c','d','e']\n",
+        "data= list(zip(r,n))\n",
+        "print(data)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true,
+          "base_uri": "https://localhost:8080/",
+          "height": 304
+        },
+        "id": "3IKWPkEhL-pc",
+        "outputId": "9e4995a2-fd38-45e0-feab-0051f1033717"
+      },
+      "outputs": [
+        {
+          "ename": "NameError",
+          "evalue": "ignored",
+          "output_type": "error",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-14-6cba48d44d85>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0md\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m{\u001b[0m\u001b[0;36m101\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'Jimmy'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m102\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'Alex'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m103\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'john'\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m104\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m'mike'\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0mcoied_dict_\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0md\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcopy\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcopied_dict\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0;32mdel\u001b[0m \u001b[0md\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m102\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'copied_dict' is not defined"
+          ]
+        }
+      ],
+      "source": [
+        "d = {101:'Jimmy', 102:'Alex', 103:'john',104:'mike'}\n",
+        "coied_dict_=d.copy()\n",
+        "print(copied_dict)\n",
+        "del d["
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ismJbnhVJoM1",
+        "outputId": "c4418678-17f7-4b7b-ca2b-615b05544790"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "{101: 'Jimmy', 102: 'Alex', 103: 'john', 104: 'mike'}\n",
+            "1st name is Jimmy\n",
+            "2nd name is mike\n",
+            "dict_keys([101, 102, 103, 104])\n",
+            "dict_values(['Jimmy', 'Alex', 'john', 'mike'])\n"
+          ]
+        }
+      ],
+      "source": [
+        "d = {101:'Jimmy', 102:'Alex', 103:'john',104:'mike'}\n",
+        "#Printing dictionary\n",
+        "print (d)\n",
+        "# Accessing value using keys\n",
+        "print(\"1st name is \"+d[101]) \n",
+        "print(\"2nd name is \"+d[104])\n",
+        "\n",
+        "print (d.keys())\n",
+        "print (d.values())"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Python.ipynb",
+      "provenance": [],
+      "toc_visible": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
